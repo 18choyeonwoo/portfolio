@@ -1173,6 +1173,17 @@ nav {
   background: var(--glass-bg-strong);
 }
 
+.connect-card-multi {
+  flex-direction: column;
+  align-items: stretch;
+  padding: 24px 28px;
+}
+
+.connect-card-multi:hover {
+  transform: translateY(-3px);
+  background: var(--glass-bg); /* Keep original bg or slight change */
+}
+
 .connect-card:hover .connect-arrow {
   background: var(--primary);
   color: white;
@@ -1216,6 +1227,58 @@ nav {
   color: var(--ink);
   transition: all 0.3s ease;
   flex-shrink: 0;
+}
+
+/* Multi-Account Styles */
+.connect-multi-content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.connect-account {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-decoration: none;
+  color: inherit;
+  padding: 8px 0;
+  transition: all 0.2s ease;
+}
+
+.connect-account:hover .connect-info-handle {
+  color: var(--primary);
+}
+
+.connect-account:hover .connect-mini-arrow {
+  background: var(--primary);
+  color: white;
+  transform: translateX(4px);
+}
+
+.connect-account-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.connect-divider-h {
+  height: 1px;
+  background: var(--glass-border);
+  opacity: 0.5;
+}
+
+.connect-mini-arrow {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  color: var(--ink-mute);
+  transition: all 0.3s ease;
 }
 
 /* === FOOTER === */
