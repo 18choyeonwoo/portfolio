@@ -1373,6 +1373,83 @@ nav {
   transition: all 0.3s ease;
 }
 
+/* Connect description highlight */
+.connect-desc-highlight {
+  color: var(--ink) !important;
+  font-weight: 700 !important;
+  font-size: 14px !important;
+}
+
+/* Instagram Slider */
+.reach-card-slider {
+  overflow: visible;
+}
+
+.reach-slider-inner {
+  position: relative;
+}
+
+.reach-slide {
+  display: none;
+}
+
+.reach-slide.reach-slide-active {
+  display: block;
+}
+
+.reach-slider-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  margin-top: 24px;
+  padding-top: 20px;
+  border-top: 1px solid var(--glass-border);
+}
+
+.reach-slider-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid var(--glass-border);
+  background: var(--glass-bg-strong);
+  cursor: pointer;
+  font-size: 20px;
+  color: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  line-height: 1;
+}
+
+.reach-slider-btn:hover {
+  background: var(--primary);
+  color: white;
+  border-color: var(--primary);
+}
+
+.reach-slider-dots {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.reach-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(99, 102, 241, 0.2);
+  transition: background 0.25s ease;
+  cursor: pointer;
+}
+
+.reach-dot.reach-dot-active {
+  background: var(--primary);
+  width: 20px;
+  border-radius: 4px;
+}
+
 /* === FOOTER === */
 footer {
   padding: 100px 24px 40px;

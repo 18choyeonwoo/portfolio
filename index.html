@@ -136,6 +136,10 @@
             <div class="profile-card-tag">ACTIVITIES</div>
             <h3 class="profile-card-title">대외활동 &부트캠프</h3>
             <div class="activity-list">
+              <div class="activity-item activity-item-current">
+                <div class="activity-period">23.9 — <span class="activity-now">NOW</span></div>
+                <div class="activity-name">아웃백스테이크하우스 <strong>트레이너</strong> 근무</div>
+              </div>
               <div class="activity-item">
                 <div class="activity-period">25.3 — 26.1</div>
                 <div class="activity-name">C언어 멘토링 동아리 <strong>멘토 활동</strong></div>
@@ -252,18 +256,18 @@
         <div class="connect-card connect-card-multi">
           <div class="connect-info-platform">INSTAGRAM</div>
           <div class="connect-multi-content">
-            <a class="connect-account" href="https://www.instagram.com/ye0nwu" target="_blank" rel="noopener">
+            <a class="connect-account" href="https://www.instagram.com/iminwave" target="_blank" rel="noopener">
               <div class="connect-account-info">
-                <span class="connect-info-handle">@ye0nwu</span>
-                <span class="connect-info-desc">일상 블로그</span>
+                <span class="connect-info-handle">@iminwave</span>
+                <span class="connect-info-desc connect-desc-highlight">릴스 크리에이터 활동</span>
               </div>
               <div class="connect-mini-arrow">→</div>
             </a>
             <div class="connect-divider-h"></div>
-            <a class="connect-account" href="https://www.instagram.com/iminwave" target="_blank" rel="noopener">
+            <a class="connect-account" href="https://www.instagram.com/ye0nwu" target="_blank" rel="noopener">
               <div class="connect-account-info">
-                <span class="connect-info-handle">@iminwave</span>
-                <span class="connect-info-desc">릴스 크리에이터 활동</span>
+                <span class="connect-info-handle">@ye0nwu</span>
+                <span class="connect-info-desc">일상 블로그</span>
               </div>
               <div class="connect-mini-arrow">→</div>
             </a>
@@ -274,7 +278,7 @@
           <div>
             <div class="connect-info-platform">X (TWITTER)</div>
             <div class="connect-info-handle">@kiinoochan</div>
-            <div class="connect-info-desc">패션 크리에이터 활동 및 소식</div>
+            <div class="connect-info-desc connect-desc-highlight">패션 크리에이터 활동 및 소식</div>
           </div>
           <div class="connect-arrow">→</div>
         </a>
@@ -287,32 +291,69 @@
       <div class="section-header-center">
         <div class="section-tag">BY THE NUMBERS</div>
         <h2 class="section-title">소셜 임팩트</h2>
-        <p class="section-subtitle">5.10 기준 업데이트</p>
+        <p class="section-subtitle">5.23 기준 업데이트</p>
       </div>
 
       <!-- 1. 인스타그램 -->
       <div class="reach-group">
         <div class="reach-group-title">1. 인스타그램</div>
-        <div class="reach-card">
-          <div class="reach-platform-label">
-            <span class="reach-platform-badge">📸 INSTAGRAM</span>
-            <span class="reach-platform-sub">@iminwave · 활동기간 5.7~</span>
+        <div class="reach-card reach-card-slider" id="instagram-slider">
+          <div class="reach-slider-inner">
+            <!-- Slide 1: 최신 5.23 -->
+            <div class="reach-slide reach-slide-active">
+              <div class="reach-platform-label">
+                <span class="reach-platform-badge">📸 INSTAGRAM</span>
+                <span class="reach-platform-sub">@iminwave · 5.23 기준</span>
+              </div>
+              <div class="reach-main">
+                <div class="reach-stat-big">
+                  <div class="reach-stat-value">52.9만</div>
+                  <div class="reach-stat-label">누적 조회수</div>
+                </div>
+                <div class="reach-divider"></div>
+                <div class="reach-stat-big">
+                  <div class="reach-stat-value">4.9만</div>
+                  <div class="reach-stat-label">반응</div>
+                </div>
+                <div class="reach-divider"></div>
+                <div class="reach-stat-big">
+                  <div class="reach-stat-value">469</div>
+                  <div class="reach-stat-label">새 팔로워</div>
+                </div>
+              </div>
+            </div>
+            <!-- Slide 2: 이전 5.10 -->
+            <div class="reach-slide">
+              <div class="reach-platform-label">
+                <span class="reach-platform-badge">📸 INSTAGRAM</span>
+                <span class="reach-platform-sub">@iminwave · 5.10 기준</span>
+              </div>
+              <div class="reach-main">
+                <div class="reach-stat-big">
+                  <div class="reach-stat-value">31.5만</div>
+                  <div class="reach-stat-label">누적 조회수</div>
+                </div>
+                <div class="reach-divider"></div>
+                <div class="reach-stat-big">
+                  <div class="reach-stat-value">2.8만</div>
+                  <div class="reach-stat-label">반응</div>
+                </div>
+                <div class="reach-divider"></div>
+                <div class="reach-stat-big">
+                  <div class="reach-stat-value">168</div>
+                  <div class="reach-stat-label">새 팔로워</div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="reach-main">
-            <div class="reach-stat-big">
-              <div class="reach-stat-value">31.5만</div>
-              <div class="reach-stat-label">누적 조회수</div>
+          <div class="reach-slider-controls">
+            <button class="reach-slider-btn" id="ig-prev" onclick="igSlide(-1)" aria-label="이전"
+              style="visibility:hidden">‹</button>
+            <div class="reach-slider-dots" id="ig-dots">
+              <span class="reach-dot reach-dot-active"></span>
+              <span class="reach-dot"></span>
             </div>
-            <div class="reach-divider"></div>
-            <div class="reach-stat-big">
-              <div class="reach-stat-value">2.8만</div>
-              <div class="reach-stat-label">반응</div>
-            </div>
-            <div class="reach-divider"></div>
-            <div class="reach-stat-big">
-              <div class="reach-stat-value">168</div>
-              <div class="reach-stat-label">새 팔로워</div>
-            </div>
+            <button class="reach-slider-btn" id="ig-next" onclick="igSlide(1)" aria-label="다음">›</button>
           </div>
         </div>
       </div>
@@ -320,48 +361,63 @@
       <!-- 2. X.COM -->
       <div class="reach-group">
         <div class="reach-group-title">2. X.COM</div>
-        <div class="reach-card">
-          <div class="reach-platform-label">
-            <span class="reach-platform-badge">𝕏 X.COM</span>
-            <span class="reach-platform-sub">@kiinoochan · 활동기간 4.2~ · 5.10 기준</span>
+        <div class="reach-card reach-card-slider" id="x-slider">
+          <div class="reach-slider-inner">
+            <!-- Slide 1: 최신 5.23 -->
+            <div class="reach-slide reach-slide-active">
+              <div class="reach-platform-label">
+                <span class="reach-platform-badge">𝕏 X.COM</span>
+                <span class="reach-platform-sub">@kiinoochan · 5.23 기준</span>
+              </div>
+              <div class="reach-main">
+                <div class="reach-stat-big">
+                  <div class="reach-stat-value">660만</div>
+                  <div class="reach-stat-label">누적 조회수</div>
+                </div>
+                <div class="reach-divider"></div>
+                <div class="reach-stat-big">
+                  <div class="reach-stat-value">12.4만</div>
+                  <div class="reach-stat-label">반응</div>
+                </div>
+                <div class="reach-divider"></div>
+                <div class="reach-stat-big">
+                  <div class="reach-stat-value">866</div>
+                  <div class="reach-stat-label">팔로워</div>
+                </div>
+              </div>
+            </div>
+            <!-- Slide 2: 이전 5.10 -->
+            <div class="reach-slide">
+              <div class="reach-platform-label">
+                <span class="reach-platform-badge">𝕏 X.COM</span>
+                <span class="reach-platform-sub">@kiinoochan · 5.10 기준</span>
+              </div>
+              <div class="reach-main">
+                <div class="reach-stat-big">
+                  <div class="reach-stat-value">560만</div>
+                  <div class="reach-stat-label">누적 조회수</div>
+                </div>
+                <div class="reach-divider"></div>
+                <div class="reach-stat-big">
+                  <div class="reach-stat-value">8.5만</div>
+                  <div class="reach-stat-label">반응</div>
+                </div>
+                <div class="reach-divider"></div>
+                <div class="reach-stat-big">
+                  <div class="reach-stat-value">717</div>
+                  <div class="reach-stat-label">팔로워</div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="reach-main">
-            <div class="reach-stat-big">
-              <div class="reach-stat-value">560만</div>
-              <div class="reach-stat-label">누적 조회수</div>
+          <div class="reach-slider-controls">
+            <button class="reach-slider-btn" id="x-prev" onclick="xSlide(-1)" aria-label="이전"
+              style="visibility:hidden">‹</button>
+            <div class="reach-slider-dots" id="x-dots">
+              <span class="reach-dot reach-dot-active"></span>
+              <span class="reach-dot"></span>
             </div>
-            <div class="reach-divider"></div>
-            <div class="reach-stat-big">
-              <div class="reach-stat-value">14.7%</div>
-              <div class="reach-stat-label">도달율</div>
-            </div>
-            <div class="reach-divider"></div>
-            <div class="reach-stat-big">
-              <div class="reach-stat-value">83.8만</div>
-              <div class="reach-stat-label">도달 수</div>
-            </div>
-          </div>
-          <div class="reach-sub">
-            <div class="reach-stat-small">
-              <div class="reach-stat-small-value">717</div>
-              <div class="reach-stat-small-label">팔로워</div>
-            </div>
-            <div class="reach-stat-small">
-              <div class="reach-stat-small-value">5.4만</div>
-              <div class="reach-stat-small-label">좋아요</div>
-            </div>
-            <div class="reach-stat-small">
-              <div class="reach-stat-small-value">2.4만</div>
-              <div class="reach-stat-small-label">북마크</div>
-            </div>
-            <div class="reach-stat-small">
-              <div class="reach-stat-small-value">7,100</div>
-              <div class="reach-stat-small-label">리포스트</div>
-            </div>
-            <div class="reach-stat-small">
-              <div class="reach-stat-small-value">1.4만</div>
-              <div class="reach-stat-small-label">프로필 방문</div>
-            </div>
+            <button class="reach-slider-btn" id="x-next" onclick="xSlide(1)" aria-label="다음">›</button>
           </div>
         </div>
       </div>
@@ -509,6 +565,31 @@
 
   </main>
 
+  <script>
+    (function () {
+      function makeSlider(sliderId, dotsId, prevId, nextId) {
+        var index = 0;
+        function updateBtns(total) {
+          document.getElementById(prevId).style.visibility = index === 0 ? 'hidden' : 'visible';
+          document.getElementById(nextId).style.visibility = index === total - 1 ? 'hidden' : 'visible';
+        }
+        return function (dir) {
+          var slider = document.getElementById(sliderId);
+          var slides = slider.querySelectorAll('.reach-slide');
+          var dots = document.getElementById(dotsId).querySelectorAll('.reach-dot');
+          slides[index].classList.remove('reach-slide-active');
+          dots[index].classList.remove('reach-dot-active');
+          index = (index + dir + slides.length) % slides.length;
+          slides[index].classList.add('reach-slide-active');
+          dots[index].classList.add('reach-dot-active');
+          updateBtns(slides.length);
+        };
+      }
+
+      window.igSlide = makeSlider('instagram-slider', 'ig-dots', 'ig-prev', 'ig-next');
+      window.xSlide = makeSlider('x-slider', 'x-dots', 'x-prev', 'x-next');
+    })();
+  </script>
 </body>
 
 </html>
